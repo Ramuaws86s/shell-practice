@@ -9,10 +9,10 @@ fi
 
 VALIDATE(){ # functions receive inputs throught args just like shell script args
     if [ $? -ne 0 ]; then
-       echo "ERROR:: Installing MySQL is failure"
+       echo "ERROR:: Installing $2 is failure"
        exit 1
     else
-       echo "Installing MySQL is SUCCESS"
+       echo "Installing $2 is SUCCESS"
     fi
 }
 
